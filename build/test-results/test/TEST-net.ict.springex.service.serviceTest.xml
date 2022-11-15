@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="net.ict.springex.service.serviceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-14T08:02:57" hostname="DESKTOP-KC8F0EL" time="0.138">
+  <properties/>
+  <testcase name="testRegister()" classname="net.ict.springex.service.serviceTest" time="0.138"/>
+  <system-out><![CDATA[2022-11-14 17:02:56,534 Test worker ERROR Unable to locate appender "Console" for logger config "root"
+05:02:56  INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+05:02:56  INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@73eb8672, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5942ee04, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5e76a2bb, org.springframework.test.context.support.DirtiesContextTestExecutionListener@757194dc, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5a865416, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@14faa38c, org.springframework.test.context.event.EventPublishingTestExecutionListener@7ff2b8d2]
+05:02:57  INFO [net.ict.springex.service.TodoServiceImpl] org.modelmapper.ModelMapper@4a901445
+05:02:57  INFO [net.ict.springex.service.TodoServiceImpl] TodoVO(tno=0, title=wowo, dueDate=2022-11-14, finshed=false, writer=you)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
