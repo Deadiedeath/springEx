@@ -20,7 +20,7 @@ public class TodoVO {
     private long tno;
     private String title;
     private LocalDate dueDate;
-    private boolean finshed;
+    private boolean finished;
     private String writer; // 작성자를 의미
 
 
