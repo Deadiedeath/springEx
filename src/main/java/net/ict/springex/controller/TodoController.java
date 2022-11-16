@@ -52,7 +52,7 @@ public class TodoController {
 
         log.info(todoDTO);
         todoService.regiser(todoDTO);
-        return "redirect:/todo/list";
+        return "todo/list_sub";
 
     }
 
@@ -76,7 +76,7 @@ public class TodoController {
     public String remove(int tno, RedirectAttributes redirectAttributes){
         todoService.delete(tno);
         log.info(tno + "delete complete");
-        return "redirect:/todo/list";
+        return "todo/list_sub";
     }
 
     @PostMapping("/modify")
@@ -90,7 +90,7 @@ public class TodoController {
         }
         log.info(todoDTO);
         todoService.modify(todoDTO);
-        return "redirect:/todo/list";
+        return "todo/list_sub";
     }
 
 }
