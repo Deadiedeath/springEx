@@ -2,6 +2,9 @@ package net.ict.springex.mapper;
 
 import lombok.extern.log4j.Log4j2;
 import net.ict.springex.domain.TodoVO;
+import net.ict.springex.dto.PageRequestDTO;
+import net.ict.springex.dto.PageResponseDTO;
+import net.ict.springex.dto.TodoDTO;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,8 +47,21 @@ public class test {
         todoMapper.delete(1);
     }
 
+//    @Test
+//    public void selecttest(){
+//        log.info(todoMapper.selectOne(2));
+//    }
+
     @Test
-    public void selecttest(){
-        log.info(todoMapper.selectOne(2));
+    public void sellisttest(){
+        PageRequestDTO pageRequestDTO= PageRequestDTO.builder()
+                        .page(1)
+                                .size(10)
+                                        .build();
+
+        List<TodoVO> voList = todoMapper.selectList(pageRequestDTO);
+        voList.forEach(vo -> log.info(vo));
     }
+
+
 }
